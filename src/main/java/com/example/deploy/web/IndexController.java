@@ -14,4 +14,10 @@ public class IndexController {
         model.addAttribute("msg", LocalDateTime.now());
         return "index";
     }
+
+    @GetMapping("/page")
+    public String page(Model model) {
+        model.addAttribute("msg", "That's it.");
+        return "page";
+    }
 }
